@@ -24,11 +24,17 @@ float pow(float base, float expoente){
     }
 }
 
+int fibonacci(int posicao){
+    if (posicao<= 1) return posicao;
+    return fibonacci(posicao-1)+fibonacci(posicao-2);
+}
+
 int main()
 {
-    float resultado;
+    //float resultado;
+    int resultado;
 
-    resultado = pow(5,-3);
-    printf("\n esse e o resultado %f",resultado);
+    resultado = fibonacci(5);
+    printf("\n esse e o resultado %d",resultado);
     return 0;
 }
